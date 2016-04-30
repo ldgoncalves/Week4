@@ -40,7 +40,32 @@
         </section>
         <section class="video1">
             <div id="video1"><!-- wrapped in a div for the flash fallback -->
-                <video height="300" width="270" poster="images/hillsboro1.jpg" preload controls loop>
+                <video height="auto" width="400" poster="images/hillsboro1.jpg" controls preload="auto" loop>
+
+                    <source src="videos/hillsboroBeach.m4v" type="video/mp4"> <!-- MPEG4 for Safari -->
+
+
+                    <source src="videos/hillsboroBeach.webm" type="video/webm"> <!-- WebM for Chrome -->
+                    <source src="videos/hillsborobeach.ogv" type="video/ogg" /> <!-- Ogg Theora for Firefox or Opera -->
+
+                    <!-- this is the image fallback in case flash is not support either -->
+                    <img src="images/hillsboro1.jpg" width="270" height="300"/>
+                    <p>Your browser doesn't support any video format!<a href="downloads.html">Click here</a> to go to downloads and watch video</p>
+                </video>
+            </div>
+
+            <article>
+                <h2>Hillsboro Beach</h2>
+                <img src="images/hillsboro1.jpg"/>
+                <img src="images/hillsboro2.jpg"/>
+                <img src="images/hillsboro3.jpg"/>
+                <p>Hillsboro Beach is a quiet town with the landmark lighthouse overlooking the inlet. On this day, a storm was brewing out in the ocean on my walk.  I could not stay long since the storm rolled within 30 minutes. The ocean and the sky both looked menacing, and all you can hear on the deserted beach was the waves crashing. If you want to avoid South Florida’s tourist rush, this is the beach to come to enjoy solidarity in peace. I like to come to reset and find inspiration. The background music used for this video is called “Simple Truth” by Jeff Broadbent. </p>
+            </article>
+
+        </section>
+        <section class="video2">
+            <div id="video2"><!-- wrapped in a div for the flash fallback -->
+                <video height="auto" width="400" poster="images/deerfield1.jpg" preload controls="true" loop>
                     <source src="videos/hillsboroBeach.webm" type="video/webm"> <!-- WebM for Chrome -->
                     <source src="videos/hillsborobeach.ogv" type="video/ogg" /> <!-- Ogg Theora for Firefox or Opera -->
                     <source src="videos/hillsboroBeach.mp4" type="video/mp4"> <!-- MPEG4 for Safari -->
@@ -84,17 +109,6 @@
                     };
 
                     swfobject.embedSWF("videos/FlashComponents/FLVPlayer.swf", "video1", "270", "296", "9.0.0", "videos/swfobject-master/swfobject/expressInstall.swf", flashvars, params);
-                }
-                else {
-                    // fix for firefox not looping
-                    var myVideo = document.getElementById('hillsboro');
-
-                    if (!(typeof myVideo.loop == 'boolean')) { // loop supported
-                        myVideo.addEventListener('ended', function () {
-                            this.currentTime = 0;
-                            this.play();
-                        }, false);
-                    }
                 }
             });
         </script>
