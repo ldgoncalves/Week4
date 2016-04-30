@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div id="container">
+            <header>
+                <a class="logo" title="National Alliance for Latino Students" href="index.html"><span>Lulu's Beach Walks</span></a>
+                <div class="hero">
+                    <h1><a class="logo" title="Lulu's Beach Walks" href="index.html"><span>Lulu's Beach Walks</span></a></h1>
+                </div>
+            </header>
+        </div>
+        <nav class="menu">
+            <ul class="parent">
+                <li>
+                    <a title="Home" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a title="Downloads" href="downloads.html">Downloads</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="intro">
+            <article>
+                <p>Hi everyone!<br>This blog is a compilation of my photos and videos from my Instagram account <a href="https://www.instagram.com/luanaphoto/">@luanaphoto</a> when I go on my beach walks. The videos are categorized by city in Florida and are downloadable for royalty free use. All background music are royalty free from <a href="http://westarmusic.sourceaudio.com/">Westar Music</a>. Enjoy and thanks for visiting my page!</p>
+            </article>
+        </section>
+        <section class="video1">
+            <div id="video1"><!-- wrapped in a div for the flash fallback -->
+                <video height="300" width="270" poster="images/hillsboro1.jpg" preload controls loop>
+                    <source src="videos/hillsboroBeach.webm" type="video/webm"> <!-- WebM for Chrome -->
+                    <source src="videos/hillsborobeach.ogv" type="video/ogg" /> <!-- Ogg Theora for Firefox or Opera -->
+                    <source src="videos/hillsboroBeach.mp4" type="video/mp4"> <!-- MPEG4 for Safari -->
+
+                    <!-- this is the image fallback in case flash is not support either -->
+                    <img src="images/hillsboro1.jpg" width="270" height="300"/>
+                    <p>Your browser doesn't support any video format!<a href="downloads.html">Click here</a> to go to downloads and watch video</p>
+                </video>
+            </div>
+
+            <article>
+                <h2>Hillsboro Beach</h2>
+                <img src="images/hillsboro1.jpg"/>
+                <img src="images/hillsboro2.jpg"/>
+                <img src="images/hillsboro3.jpg"/>
+                <p>Hillsboro Beach is a quiet town with the landmark lighthouse overlooking the inlet. On this day, a storm was brewing out in the ocean on my walk.  I could not stay long since the storm rolled within 30 minutes. The ocean and the sky both looked menacing, and all you can hear on the deserted beach was the waves crashing. If you want to avoid South Florida’s tourist rush, this is the beach to come to enjoy solidarity in peace. I like to come to reset and find inspiration. The background music used for this video is called “Simple Truth” by Jeff Broadbent. </p>
+            </article>
+
+        </section>
+
+
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="videos/swfobject-master/swfobject/swfobject.js"></script>
+
+        <script>
+            jQuery(document).ready(function() {
+                var v = document.createElement("video"); // Check if the browser supports the video tag
+                if ( !v.play ) { // If no, use Flash.
+                    var params = {
+                        allowfullscreen: "false",
+                        allowscriptaccess: "always",
+                        wmode: "transparent"
+                    };
+
+                    var flashvars = {
+                        src: "videos/FlashComponents/hillsboroBeach.flv"
+                    };
+
+                    swfobject.embedSWF("videos/FlashComponents/FLVPlayer.swf", "video1", "270", "296", "9.0.0", "videos/swfobject-master/swfobject/expressInstall.swf", flashvars, params);
+                }
+                else {
+                    // fix for firefox not looping
+                    var myVideo = document.getElementById('hillsboro');
+
+                    if (!(typeof myVideo.loop == 'boolean')) { // loop supported
+                        myVideo.addEventListener('ended', function () {
+                            this.currentTime = 0;
+                            this.play();
+                        }, false);
+                    }
+                }
+            });
+        </script>
+
+    </body>
+</html>
