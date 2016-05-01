@@ -94,14 +94,228 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+@font-face {
+    font-family: 'montezregular';
+    src: url('../fonts/Montez-Regular-webfont.eot');
+    src: url('../fonts/Montez-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montez-Regular-webfont.woff') format('woff'),
+    url('../fonts/Montez-Regular-webfont.ttf') format('truetype'),
+    url('../fonts/Montez-Regular-webfont.svg#montezregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #363636;
+    margin:0;
+    padding: 0;
+}
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1 {
+    margin: 0 0 1em 0;
+    font-size: 2.8em;
+    font-weight: 700;
+}
+
+h2 {
+    margin: 0 0 .5em 0;
+    font-size: 1.6em;
+    font-weight: 700;
+    line-height: 1.1em;
+}
+
+h3 {
+    margin: 0 0 .5em 0;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+h4 {
+    margin: 0 0 1.5em 0;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+p {
+    margin: 0 0 1em 0;
+}
+
+a {
+    color: #00A99D;
+}
+
+
+header {
+    height: 500px;
+    background: #062940 url(../images/sunrise1200.jpg) no-repeat center;
+    position: relative;
+}
+
+header div.hero {
+    position: absolute;
+    width: 30%;
+    top: 350px;
+    left: 67.5%;
+    padding: 0 15px 0 15px;
+    background-color: rgba(0,0,0,.60);
+}
+
+header div.hero h1 {
+    font-family: montezregular;
+    line-height: 1em;
+    color: cornsilk;
+    font-size:3em;
+    text-align: right;
+}
+
+header div.hero h1 a {
+    text-decoration: none;
+    color: #fff;
+}
 
 
 
+nav {
+    background-color: #0071BC;
+}
 
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding:20px;
+}
 
+nav li {
+    display: inline-block;
+}
 
+nav li.home {
+    border-right: solid 1px #fff;
+}
 
+nav ul li a{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: 125px;
+    position: relative;
+}
 
+section {
+    padding: 30px;
+}
+
+section::after {
+    content:'';
+    display: block;
+    clear: both;
+}
+
+section.intro {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+section.intro article {
+    text-align: center;
+}
+
+section.video1 {
+    background-color: #0071BC;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+#video1 {
+    float:left;
+}
+section.video1 article {
+    width: 50%;
+    padding: 20px 20px 0px 20px ;
+    float:left;
+    min-height: 250px;
+}
+
+section.video2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #363636;
+}
+
+#video2 {
+    float:left;
+}
+
+section.video2 article {
+    width: 50%;
+    padding: 20px 20px 0px 20px ;
+    float:left;
+    min-height: 250px;
+}
+
+section.video3 {
+    background-color: #0071BC;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+#video3 {
+    float:left;
+}
+section.video3 article {
+    width: 50%;
+    padding: 20px 20px 0px 20px ;
+    float:left;
+    min-height: 250px;
+}
+
+section.video2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #363636;
+}
+
+section.video1 article h2, section.video2 article h2, section.video3 article h2 {
+    font-family: montezregular, sans-serif;
+    font-size: 2.5em;
+}
+
+p.byline{
+    margin-top:10px;
+    font-style: italic;
+}
+
+section img {
+    width: 150px;
+    height: auto;
+}
+
+.backtotop {
+   padding-top: 30px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: .75em;
+}
 
 
 

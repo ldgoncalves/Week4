@@ -3,3 +3,7 @@ AddType video/ogg .ogg
 AddType video/mp4 .mp4 .m4v
 AddType video/webm .webm
 AddType application/x-shockwave-flash swf
+
+<IfModule mod_headers.c>
+   Header set Accept-Ranges "bytes"
+</IfModule>

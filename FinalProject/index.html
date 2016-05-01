@@ -2,10 +2,9 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title></title>
-        <meta name="description" content="">
+        <title>Lulu's Beach Walks</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/normalize.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -17,15 +16,13 @@
         <!-- Add your site or application content here -->
         <div id="container">
             <header>
-                <a class="logo" title="National Alliance for Latino Students" href="index.html"><span>Lulu's Beach Walks</span></a>
                 <div class="hero">
-                    <h1><a class="logo" title="Lulu's Beach Walks" href="index.html"><span>Lulu's Beach Walks</span></a></h1>
+                    <h1 id="top"><a class="logo" title="Lulu's Beach Walks" href="index.html"><span>Lulu's Beach Walks</span></a></h1>
                 </div>
             </header>
-        </div>
         <nav class="menu">
             <ul class="parent">
-                <li>
+                <li class="home">
                     <a title="Home" href="index.html">Home</a>
                 </li>
                 <li>
@@ -38,18 +35,17 @@
                 <p>Hi everyone!<br>This blog is a compilation of my photos and videos from my Instagram account <a href="https://www.instagram.com/luanaphoto/">@luanaphoto</a> when I go on my beach walks. The videos are categorized by city in Florida and are downloadable for royalty free use. All background music are royalty free from <a href="http://westarmusic.sourceaudio.com/">Westar Music</a>. Enjoy and thanks for visiting my page!</p>
             </article>
         </section>
+            <!-- Video 1 -->
         <section class="video1">
             <div id="video1"><!-- wrapped in a div for the flash fallback -->
-                <video height="auto" width="400" poster="images/hillsboro1.jpg" controls preload="auto" loop>
-
-                    <source src="videos/hillsboroBeach.m4v" type="video/mp4"> <!-- MPEG4 for Safari -->
-
+                <video height="auto" width="500" poster="images/hillsboro1.jpg" controls preload="auto" loop>
 
                     <source src="videos/hillsboroBeach.webm" type="video/webm"> <!-- WebM for Chrome -->
                     <source src="videos/hillsborobeach.ogv" type="video/ogg" /> <!-- Ogg Theora for Firefox or Opera -->
+                    <source src="videos/hillsboroBeach.mp4" type="video/mp4" /> <!-- MPEG4 for Safari -->
 
                     <!-- this is the image fallback in case flash is not support either -->
-                    <img src="images/hillsboro1.jpg" width="270" height="300"/>
+                    <img src="images/hillsboro1.jpg" width="500" height="auto"/>
                     <p>Your browser doesn't support any video format!<a href="downloads.html">Click here</a> to go to downloads and watch video</p>
                 </video>
             </div>
@@ -59,34 +55,64 @@
                 <img src="images/hillsboro1.jpg"/>
                 <img src="images/hillsboro2.jpg"/>
                 <img src="images/hillsboro3.jpg"/>
+                <p class="byline">By Luana Goncalves</p>
                 <p>Hillsboro Beach is a quiet town with the landmark lighthouse overlooking the inlet. On this day, a storm was brewing out in the ocean on my walk.  I could not stay long since the storm rolled within 30 minutes. The ocean and the sky both looked menacing, and all you can hear on the deserted beach was the waves crashing. If you want to avoid South Florida’s tourist rush, this is the beach to come to enjoy solidarity in peace. I like to come to reset and find inspiration. The background music used for this video is called “Simple Truth” by Jeff Broadbent. </p>
             </article>
-
         </section>
+            <!-- Video 2 -->
         <section class="video2">
             <div id="video2"><!-- wrapped in a div for the flash fallback -->
-                <video height="auto" width="400" poster="images/deerfield1.jpg" preload controls="true" loop>
-                    <source src="videos/hillsboroBeach.webm" type="video/webm"> <!-- WebM for Chrome -->
-                    <source src="videos/hillsborobeach.ogv" type="video/ogg" /> <!-- Ogg Theora for Firefox or Opera -->
-                    <source src="videos/hillsboroBeach.mp4" type="video/mp4"> <!-- MPEG4 for Safari -->
+                <video height="auto" width="500" poster="images/deerfield1.jpg" preload controls loop>
+                    <source src="videos/deerfieldBeach.webm" type="video/webm"> <!-- WebM for Chrome -->
+                    <source src="videos/deerfieldBeach.ogv" type="video/ogg" /> <!-- Ogg Theora for Firefox or Opera -->
+                    <source src="videos/deerfieldBeach.mp4" type="video/mp4"> <!-- MPEG4 for Safari -->
 
                     <!-- this is the image fallback in case flash is not support either -->
-                    <img src="images/hillsboro1.jpg" width="270" height="300"/>
+                    <img src="images/deerfield1.jpg" width="500" height="auto"/>
                     <p>Your browser doesn't support any video format!<a href="downloads.html">Click here</a> to go to downloads and watch video</p>
                 </video>
             </div>
 
             <article>
-                <h2>Hillsboro Beach</h2>
-                <img src="images/hillsboro1.jpg"/>
-                <img src="images/hillsboro2.jpg"/>
-                <img src="images/hillsboro3.jpg"/>
-                <p>Hillsboro Beach is a quiet town with the landmark lighthouse overlooking the inlet. On this day, a storm was brewing out in the ocean on my walk.  I could not stay long since the storm rolled within 30 minutes. The ocean and the sky both looked menacing, and all you can hear on the deserted beach was the waves crashing. If you want to avoid South Florida’s tourist rush, this is the beach to come to enjoy solidarity in peace. I like to come to reset and find inspiration. The background music used for this video is called “Simple Truth” by Jeff Broadbent. </p>
+                <h2>Deerfield Beach</h2>
+                <img src="images/deerfield1.jpg"/>
+                <img src="images/deerfield2.jpg"/>
+                <img src="images/deerfield3.jpg"/>
+                <p class="byline">By Luana Goncalves</p>
+                <p>Deerfield Beach is the perfect the place if you want a lively beach experience. Deerfield Beach is my hometown and where I grew up pretty much all of my life. People playing volleyball, surfing or simply having big party amongst friends. It is definitely a great place to people watch. Although this is a local hotspot, it is flourishing with tourists as well. Towards the end of the video you will see a group feeding a flock of seagulls, which is a big no, no!  Besides tourists, there is plenty scenery to observe.  The background music used for this video is called “Sunrise Meditation” by Jeff Broadbent.</p>
             </article>
-
         </section>
+            <!-- Video 3 -->
+            <section class="video3">
+                <div id="video3"><!-- wrapped in a div for the flash fallback -->
+                    <video height="auto" width="500" poster="images/boca1.jpg" preload controls loop>
+                        <source src="videos/bocaRaton.webm" type="video/webm"> <!-- WebM for Chrome -->
+                        <source src="videos/bocaRaton.ogv" type="video/ogg" /> <!-- Ogg Theora for Firefox or Opera -->
+                        <source src="videos/bocaRaton.mp4" type="video/mp4"> <!-- MPEG4 for Safari -->
+
+                        <!-- this is the image fallback in case flash is not support either -->
+                        <img src="images/boca1.jpg" width="500" height="auto"/>
+                        <p>Your browser doesn't support any video format!<a href="downloads.html">Click here</a> to go to downloads and watch video</p>
+                    </video>
+                </div>
+
+                <article>
+                    <h2>Boca Raton</h2>
+                    <img src="images/boca1.jpg"/>
+                    <img src="images/boca2.jpg"/>
+                    <img src="images/boca3.jpg"/>
+                    <p class="byline">By Luana Goncalves</p>
+                    <p>There is so much to see at Boca Raton! There are pretty jetties to climb onto to overlook the ocean and a neat inlet to fish off from. You can different boats and yachts enter and leave the inlet. I like walking here because you go through stretches that are desolate but also populated, so there is always a lot to see! Some of the jetties can form pools where you can witness tiny marine life.  It’s a great beach to escape to, you just have to have endurance to walk long distances. The background music used for this video is called “Anti Gravity” by Nick Tidy. </p>
+                </article>
+            </section>
+            <div class="backtotop">
+                <a  href="#top">Back to top</a>
+            </div>
+
+            <footer> <p>&copy; 2016 Luana Goncalves | RMO 1604 | Section 01</p></footer>
 
 
+        </div>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
